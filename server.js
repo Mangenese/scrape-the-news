@@ -87,6 +87,19 @@ app.get("/articles/:id", function(req, res) {
 });
 });
 
+app.get("/note", function(req, res) {
+
+    db.Note.find()
+
+    .then(function(dbPopulate) {
+
+        res.json(dbPopulate);
+    })
+    .catch(function(err) {
+        res.json(err);
+      });
+});
+
 app.post("/articles/:id", function(req, res) {
 
     db.Note.create(req.body)
