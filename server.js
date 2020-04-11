@@ -115,7 +115,7 @@ app.post("/articles/:id", function(req, res) {
     });
 });
 
-mongoose.connect(process.env.MONGODB_URI ||"mongodb://localhost/newscraper" );
+mongoose.connect(process.env.MONGODB_URI ||"mongodb://Mangenese:Maki1996!@ds125479.mlab.com:25479/heroku_fvrhmhr1" );
 
 app.listen(PORT, function() {
     console.log("App running on port " + PORT );
