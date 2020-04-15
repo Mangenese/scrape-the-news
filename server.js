@@ -12,7 +12,7 @@ var cheerio = require("cheerio");
 //Declare our models folder
 var db = require("./models");
 
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 4000;
 
 var app = express();
 
@@ -120,3 +120,4 @@ mongoose.connect(process.env.MONGODB_URI ||"mongodb://Mangenese:Maki1996!@ds1254
 app.listen(PORT, function() {
     console.log("App running on port " + PORT );
   });
+  // testing
