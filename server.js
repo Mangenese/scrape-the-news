@@ -33,6 +33,10 @@ app.set("view engine", "handlebars");
 
 //Routes
 
+app.get("/", function(req,res) {
+    res.send("hello world")
+})
+
 app.get("/scrape", function (req, res) {
 
     axios.get("http://www.bioethics.net/news").then(function (response) {
